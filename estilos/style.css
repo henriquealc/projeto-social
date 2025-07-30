@@ -1,0 +1,39 @@
+@charset "UTF-8"; /* Define o padrão de codificação do arquivo CSS para UTF-8 */
+
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0px; /* Remove margens padrão */
+    padding: 0px; /* Remove paddings padrão */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para toda a página */
+}
+
+/* Define que HTML e BODY ocuparão 100% da altura e largura da tela */
+html, body {
+    height: 100vh; /* Altura total da janela de visualização */
+    width: 100vw;  /* Largura total da janela de visualização */
+}
+
+/* Estilo do corpo da página */
+body {
+    background: url("/imagens/fundo-madeira.jpg") no-repeat top center; /* Define imagem de fundo sem repetição e centralizada no topo */
+    background-size: cover; /* Faz a imagem cobrir toda a área visível */
+    background-attachment: fixed; /* Fixa a imagem ao fundo para efeito parallax */
+}
+
+/* Container principal */
+main {
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    position: relative; /* Define referência para posicionamento absoluto dos elementos internos */
+}
+
+/* Seção que representa a tela do telefone */
+section#telefone {
+    position: absolute; /* Permite posicionar a seção em relação ao MAIN */
+    top: 50%; /* Move o topo do elemento para 50% da altura do MAIN */
+    left: 50%; /* Move a esquerda do elemento para 50% da largura do MAIN */
+    transform: translate(-50%, -50%); /* Centraliza o elemento no eixo X e Y */
+
+    height: 627px; /* Altura fixa da imagem do iPhone */
+    width: 311px; /* Largura fixa da imagem do iPhone */
+    background: url('/imagens/frame-iphone.png') no-repeat; /* Define imagem do frame do iPhone sem repetição */
+}
