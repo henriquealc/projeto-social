@@ -45,3 +45,24 @@ iframe#tela{
     width: 269px;
     height: 471px;
 }
+
+section#redes-sociais {
+    text-align: right; /*Faz o menu dos botões ficar do lado direito da tela*/
+    margin-right: 20px; /*Cria um espaço lateral entre os botões e a beira da tela a direita*/
+}
+
+section#redes-sociais img {
+    width: 50px; /*Tamanho dos botões*/
+    margin: 10px; /*Separa os botões*/
+    border-radius: 50px; /*Faz os botões ficar redondo*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404); /*Cria um sombra nos botões*/
+    box-sizing: border-box; /*Faz a borda fazer parte da caixa*/
+}
+
+/*Ao passar o mouse*/
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.63); /*Cria uma borda*/
+    transform: translate(-3px, -3px); /* Move o elemento 3px para a esquerda e 3px para cima */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623); /* Adiciona uma sombra ao elemento com deslocamento de 5px em X, 5px em Y, e um blur de 10px (corrigido de "10x" para "10px")*/
+    transition: transform 0.5s, border 1s; /* Aplica uma transição suave de 0,5s quando a propriedade "transform" mudar (por exemplo, em hover) */
+}
