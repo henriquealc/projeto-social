@@ -37,3 +37,11 @@ section#telefone {
     width: 311px; /* Largura fixa da imagem do iPhone */
     background: url('/imagens/frame-iphone.png') no-repeat; /* Define imagem do frame do iPhone sem repetição */
 }
+
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
